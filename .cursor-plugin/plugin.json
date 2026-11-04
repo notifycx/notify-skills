@@ -1,0 +1,22 @@
+{
+  "name": "notifycx",
+  "displayName": "Notify",
+  "description": "Transactional email skill and notifycx-mcp for Notify (notify.cx): send password resets, magic links, receipts, and app notifications from your coding agent.",
+  "version": "1.2.3",
+  "logo": "assets/icon.svg",
+  "author": {
+    "name": "Notify",
+    "url": "https://notify.cx"
+  },
+  "homepage": "https://notify.cx",
+  "repository": "https://github.com/notifycx/notify-skills",
+  "license": "MIT",
+  "keywords": [
+    "email",
+    "notify",
+    "notifycx",
+    "transactional-email",
+    "notifications",
+    "mcp"
+  ]
+}

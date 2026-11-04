@@ -1,0 +1,22 @@
+{
+  "name": "notifycx",
+  "version": "1.2.3",
+  "description": "Notify transactional email skill and MCP for Codex — send password resets, magic links, receipts, and app notifications via notify.cx.",
+  "logo": "assets/icon.svg",
+  "author": {
+    "name": "Notify",
+    "email": "hello@notify.cx",
+    "url": "https://notify.cx"
+  },
+  "homepage": "https://notify.cx",
+  "repository": "https://github.com/notifycx/notify-skills",
+  "license": "MIT",
+  "keywords": [
+    "notify",
+    "email",
+    "transactional-email",
+    "notifications",
+    "mcp"
+  ],
+  "onboardingSkill": "./skills/notify-email/SKILL.md"
+}

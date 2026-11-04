@@ -1,0 +1,59 @@
+{
+  "skill_name": "notify-email",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Add a welcome email when users sign up in my Next.js app.",
+      "expected_output": "Recommends Notify transactional send via server-side notifycx or fetch; mentions domain verification for production from address.",
+      "files": [],
+      "expectations": [
+        "Uses server-side send (Route Handler or backend)",
+        "References POST /api/email/send or notifycx SDK",
+        "Mentions verified domain for custom from",
+        "Does not put API key in client code"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "I want to send a monthly newsletter to 10,000 subscribers with Notify.",
+      "expected_output": "Declines or redirects — Notify is not for newsletters/marketing.",
+      "files": [],
+      "expectations": [
+        "States Notify is for transactional email not newsletters",
+        "Does not provide a bulk newsletter implementation as a Notify feature"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Configure my app to send password reset emails through Notify with a Reply-To header.",
+      "expected_output": "Explains Notify send API has no reply-to field; suggest handling replies differently or omitting reply-to.",
+      "files": [],
+      "expectations": [
+        "Does not invent a reply-to API field",
+        "Uses documented body fields to, from, subject, html/text/message"
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "I'm on the free plan and haven't verified a domain yet. How can I test the send API?",
+      "expected_output": "Points to POST /api/email/send/test or sendTest / send_test_email MCP; explains non-delivering rehearsal.",
+      "files": [],
+      "expectations": [
+        "Mentions /api/email/send/test or sendTest",
+        "Does not claim test endpoint delivers mail",
+        "Mentions domain verification for production send"
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "Wire Supabase Auth magic link emails through Notify instead of SMTP.",
+      "expected_output": "Points to Supabase Send Email Hook recipe and server-side NOTIFY_API_KEY.",
+      "files": [],
+      "expectations": [
+        "References Supabase hook or supabase-auth docs on notify.cx",
+        "Uses HTTP API or SDK not SMTP",
+        "Keeps API key server-side"
+      ]
+    }
+  ]
+}

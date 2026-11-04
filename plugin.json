@@ -1,0 +1,46 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "notifycx",
+  "version": "1.2.3",
+  "description": "Send transactional email with Notify (notify.cx): SDK, HTTP API, and MCP tools for coding agents.",
+  "author": {
+    "name": "Notify",
+    "email": "hello@notify.cx",
+    "url": "https://notify.cx"
+  },
+  "homepage": "https://notify.cx",
+  "repository": "https://github.com/notifycx/notify-skills",
+  "license": "MIT",
+  "keywords": [
+    "email",
+    "notify",
+    "notifycx",
+    "transactional-email",
+    "notifications",
+    "mcp",
+    "api"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Notify",
+        "shortDescription": "Transactional email API for apps and coding agents",
+        "longDescription": "Add password resets, magic links, receipts, and product notifications with Notify. Includes the notify-email skill and notifycx-mcp for domain setup and sending.",
+        "developerName": "Notify",
+        "category": "Developer Tools",
+        "websiteURL": "https://notify.cx",
+        "privacyPolicyURL": "https://notify.cx/privacy",
+        "termsOfServiceURL": "https://notify.cx/terms",
+        "brandColor": "#111111",
+        "logo": "./assets/icon.svg",
+        "composerIcon": "./assets/icon.svg",
+        "defaultPrompt": [
+          "Add transactional email to my app with Notify.",
+          "Wire up a password reset email using Notify.",
+          "Set up Notify domain verification and send a test email."
+        ]
+      },
+      "onboardingSkill": "./skills/notify-email/SKILL.md"
+    }
+  }
+}

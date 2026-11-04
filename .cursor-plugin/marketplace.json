@@ -1,0 +1,13 @@
+{
+  "name": "notify-skills",
+  "owner": {
+    "name": "Notify",
+    "email": "hello@notify.cx"
+  },
+  "plugins": [
+    {
+      "name": "notifycx",
+      "source": "./"
+    }
+  ]
+}
