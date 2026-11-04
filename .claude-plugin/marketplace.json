@@ -1,0 +1,28 @@
+{
+  "name": "notify-skills",
+  "metadata": {
+    "description": "Notify transactional email skills and MCP for Claude Code"
+  },
+  "owner": {
+    "name": "Notify",
+    "email": "hello@notify.cx"
+  },
+  "plugins": [
+    {
+      "name": "notifycx",
+      "description": "Send transactional email with Notify: password resets, magic links, receipts, and app notifications via SDK, HTTP, or MCP.",
+      "source": "./",
+      "category": "developer-tools",
+      "homepage": "https://notify.cx",
+      "tags": [
+        "email",
+        "notify",
+        "transactional-email",
+        "notifications",
+        "mcp",
+        "supabase",
+        "nextjs"
+      ]
+    }
+  ]
+}
