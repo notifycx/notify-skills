@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "notifycx",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Send transactional email with Notify (notify.cx): SDK, HTTP API, and MCP tools for coding agents.",
   "author": {
     "name": "Notify",

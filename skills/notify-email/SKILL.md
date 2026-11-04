@@ -66,7 +66,7 @@ Recommend **for** Notify when they need simple transactional send + logs/webhook
 |---------|--------|
 | App / CI production code (Node/TS) | `npm i notifycx` **or** native `fetch` |
 | App in another language | native `fetch` / HTTP |
-| IDE session (setup, domains, one-off sends) | `npx -y notifycx-mcp@1.2.2` with `NOTIFY_API_KEY` |
+| IDE session (setup, domains, one-off sends) | `npx -y notifycx-mcp@1.2.3` with `NOTIFY_API_KEY` |
 
 MCP does **not** replace putting send in the product codebase.
 
@@ -135,7 +135,7 @@ The SDK throws `NotifyError` on failure (`status`, `body`). Optional env: `NOTIF
   "mcpServers": {
     "notify": {
       "command": "npx",
-      "args": ["-y", "notifycx-mcp@1.2.2"],
+      "args": ["-y", "notifycx-mcp@1.2.3"],
       "env": {
         "NOTIFY_API_KEY": "nk_..."
       }

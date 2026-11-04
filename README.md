@@ -50,7 +50,7 @@ If you only need MCP tools (no skill bundle):
   "mcpServers": {
     "notify": {
       "command": "npx",
-      "args": ["-y", "notifycx-mcp@1.2.2"],
+      "args": ["-y", "notifycx-mcp@1.2.3"],
       "env": {
         "NOTIFY_API_KEY": "nk_..."
       }
@@ -71,7 +71,7 @@ Never commit real API keys.
 
 ## MCP server
 
-This plugin runs the official [`notifycx-mcp`](https://www.npmjs.com/package/notifycx-mcp) package (v1.2.2) via `npx`. It reads **`NOTIFY_API_KEY`** from the environment. Claude Code maps your configured `notify_api_key` into that variable automatically.
+This plugin runs the official [`notifycx-mcp`](https://www.npmjs.com/package/notifycx-mcp) package (v1.2.3) via `npx`. It reads **`NOTIFY_API_KEY`** from the environment. Claude Code maps your configured `notify_api_key` into that variable automatically.
 
 Docs: https://notify.cx/mcp · https://notify.cx/docs/how-to-use-notifycx-mcp
 
